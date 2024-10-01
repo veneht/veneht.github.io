@@ -1,0 +1,270 @@
+:root {
+    --main-bgcolor: #2f3d40;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Kanit", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/** Navigation */
+
+header {
+    height: 8vh;
+    background-color: #2f3d40;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+nav {
+    width: 80%;
+    min-width: 350px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #logo {
+    font-size: 2rem;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#blink {
+    animation: blink 1s step-start infinite;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+}
+
+nav div a {
+    border-bottom: solid none 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/** Navigation End*/
+
+/** Main */
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #455559;
+    color: white;
+}
+.main-wrapper {
+    margin: 4vh;
+    width: 1440px;
+    min-width: 280px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+/** Main End*/
+
+/** Sidebar */
+/** Profile */
+
+.profile-wrapper {
+    padding: 2vh;
+    position: sticky;
+    top: 4vh;
+    width: 17rem;
+    background-color: #2f3d40;
+    border-radius: 1.2rem;  
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+
+.profile img {
+    width: 17rem;
+    height: 100%;
+}
+.profile div {
+    width: 100%;
+}
+
+.profile p {
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    gap: 1vh;
+    cursor: default;
+}
+
+.profile p:hover {
+    transition: .3s ease-in-out;
+    color: cyan;
+}
+
+/** Profile End*/
+/** COntact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    margin: 1vh 0vh 0vh;
+}
+
+p.title {
+    font-size: 2rem;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+.contact div a {
+    display: flex;
+    transition: 0.3s;
+}
+.contact div a:hover {
+    transform: scale(1.2);
+    color: cyan;
+}
+/** COntact End */
+/** Sidebar End*/
+
+.experience {
+    width: 80%;
+    padding: 2vh;
+    background-color: #2f3d40;
+    border-radius: 1.2rem;
+}
+
+#showing-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+
+#showing-card div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+
+.xp-link {
+    display: flex;
+    justify-content: end;
+    margin: 0vh 0vh 2vh;
+    gap: 2vh;
+    border-bottom: solid 1px white;
+}
+
+.xp-link p {
+    margin: 0vh 0vh 2vh;
+    cursor: pointer;
+}
+
+.card {
+    align-items: center;
+}
+
+.card-wrapper {
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card-img {
+    width: 6rem;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+.active a, .card p a:hover{
+    transition: .3s ease-in-out;
+    color: cyan;
+}
+
+/** Tablet */
+@media only screen and (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .profile-wrapper {
+        display: flex;
+        width: auto;
+        gap: 1rem;
+        align-items: center;
+    }
+    .profile img {
+        width: 100%;
+    }
+
+    .experience {
+        min-width: 320px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 673px) {
+    .main-wrapper {
+        margin: 1rem;
+
+    }
+    .profile-wrapper {
+        flex-direction: column;
+    }
+
+    .profile img {
+        width: 17rem;
+    }
+}
+
+/** Phone */
+@media only screen and (max-width: 425px) {
+    .main-wrapper {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-wrapper {
+        min-width: 320px;
+    }
+
+    .profile {
+        align-items: center;
+    }
+
+    .experience {
+        width: 90%;
+    }
+}
