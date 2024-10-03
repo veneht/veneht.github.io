@@ -6,7 +6,7 @@ import Experience from './Experience.js';
 
 const Home = () => {
     //? Web Title here!!
-    const webTitle = "veoveneht | Home";
+    const webTitle = "Lisan Shidqi Farizan | Home";
     
     return (
     <>
