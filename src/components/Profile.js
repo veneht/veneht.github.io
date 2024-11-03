@@ -18,11 +18,11 @@ const Profile = () => {
                         />
                         <div>
                         <p>
-                            <span class="material-symbols-outlined"> id_card </span>Lisan Shidqi
+                            <span class="material-symbols-outlined"> id </span>Lisan Shidqi
                             Farizan
                         </p>
                         <p>
-                            <span class="material-symbols-outlined"> architecture </span>Junior
+                            <span class="material-symbols-outlined"> work </span>Junior
                             Front-End
                         </p>
                         <p>
