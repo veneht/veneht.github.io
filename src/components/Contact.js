@@ -18,7 +18,7 @@ const Contact = () => {
                         ></path>
                     </svg></a
                 >
-                <a href="https://github.com/lisansf"
+                <a href="https://github.com/lisanshidqifarizan"
                     ><svg
                     xmlns="http://www.w3.org/2000/svg"
                         width="35"
